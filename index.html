@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="Imagens/neuron logo.png" alt="Logo neuron1">
+    </div>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="input-container">
+            <input type="text" id="item" placeholder="Digite o item" list="product-suggestions">
+            <datalist id="product-suggestions"></datalist>
+            <input type="number" id="quantity" placeholder="Quantidade" min="1">
+            <button onclick="addItem()">Adicionar</button>
+        </div>
+        <ul id="shopping-list"></ul>
+        <div class="total-container">
+       
+        </div>
+        <button onclick="exportList()">Exportar Lista</button>
+    </div>
+    <div class="wallpaper-control">
+        <label for="background-color">Escolha a cor:</label>
+        <input type="color" id="background-color" name="background-color">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
